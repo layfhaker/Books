@@ -1,0 +1,25 @@
+[
+    {
+        "bookId": "1q84-part3",
+        "bookTitle": "1Q84",
+        "bookAuthor": "Харуки Мураками",
+        "description": "Третья часть романа",
+        "chapters": [
+            {
+                "chapterId": "chapter-1",
+                "chapterNumber": 1,
+                "chapterTitle": "Октябрь"
+            },
+            {
+                "chapterId": "chapter-2",
+                "chapterNumber": 2,
+                "chapterTitle": "Ноябрь"
+            },
+            {
+                "chapterId": "chapter-3",
+                "chapterNumber": 3,
+                "chapterTitle": "Декабрь"
+            }
+        ]
+    }
+]
