@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>German Reading Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>📚 German Reading Platform</h1>
+            <p class="subtitle">Интерактивное чтение с переводом</p>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="navigation">
+            <div class="nav-group">
+                <label for="bookSelect">Книга:</label>
+                <select id="bookSelect" class="selector">
+                    <option value="">Выберите книгу...</option>
+                </select>
+            </div>
+
+            <div class="nav-group">
+                <label for="chapterSelect">Глава:</label>
+                <select id="chapterSelect" class="selector" disabled>
+                    <option value="">Выберите главу...</option>
+                </select>
+            </div>
+
+            <div class="nav-buttons">
+                <button id="prevBtn" class="nav-btn" disabled>← Предыдущая</button>
+                <button id="nextBtn" class="nav-btn" disabled>Следующая →</button>
+            </div>
+        </nav>
+
+        <!-- Metadata Display -->
+        <section id="metadata" class="metadata hidden">
+            <div class="meta-info">
+                <h2 id="chapterTitle"></h2>
+                <div class="meta-details">
+                    <span id="levelBadge" class="badge"></span>
+                    <span id="wordCountBadge" class="badge"></span>
+                </div>
+                <p id="description" class="description"></p>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <section id="content" class="content">
+                <!-- Динамический контент загружается сюда -->
+            </section>
+        </main>
+
+        <!-- Translation Modal -->
+        <div id="modal" class="modal hidden">
+            <div class="modal-content">
+                <button id="closeModal" class="close-btn">&times;</button>
+                <div class="modal-body">
+                    <h3>Перевод</h3>
+                    <div id="modalTranslation" class="translation-text"></div>
+                    <div id="modalNotes" class="modal-notes hidden"></div>
+                    <div id="modalTags" class="modal-tags hidden"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Overlay -->
+        <div id="modalOverlay" class="modal-overlay hidden"></div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Created for A2 German learning</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
